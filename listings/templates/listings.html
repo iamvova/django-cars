@@ -1,0 +1,7 @@
+{% include "menu.html" %}
+
+{% for x in brand %}
+    <ul class="car-list wrapper">
+        <li><a href='/listing/{{ x.id }}'>{{ x.name }}</a></li>
+    </ul>
+{% endfor %}

@@ -1,0 +1,16 @@
+{% include "menu.html" %}
+<div class="car-content">
+    <div class="wrap">
+        <div>
+            <img src='{{ listing.image.url }}' width= "100%" height="300"></img>
+        </div>
+        <h2>{{listing.name }}</h2>
+        <p>{{listing.description}}</p>
+        <p>Milage: {{listing.milage}} km</p>
+        <p class="price"><b>Price: {{ listing.price }}$</b></p>
+        <div>
+            <a href='/delete/{{ listing.id }}'><img src="../../media/delete.png" alt="delete" class="icon"></a>
+            <a href='/update/{{ listing.id }}'><img src="../../media/updated.png" alt="delete" class="icon"></a>
+        </div>
+    </div>
+</div>
